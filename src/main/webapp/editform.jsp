@@ -51,7 +51,7 @@
 	<hr>
 </div>
 <div id="formdiv" class="container">
-	<form action="editpost.jsp" method="post" enctype="multipart/form-data" class="needs-validation" name="hotel" onsubmit="return validationCheck()"  novalidate>
+	<form action="editpost.jsp" method="post" <%--enctype="multipart/form-data"--%> class="needs-validation" name="hotel" onsubmit="return validationCheck()"  novalidate>
 		<div class="row mb-5">
 			<div class="col-md-4">
 				<label class="form-label" for="name">Name</label>
