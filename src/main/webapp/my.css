@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 600px){
+    a#homeTitle {
+        font-size: 30px;
+    }
+    div#resTitle {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10%;
+    }
+    a#about, #rooms, #reservation, #community {
+        font-size: 13px;
+    }
+    [class*="col-"] {
+        width: 100%;
+    }
+    #tablediv table, #tablediv thead, #tablediv tbody, #tablediv th, #tablediv td, #tablediv tr {
+        display: block;
+    }
+    #tablediv thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #tablediv tr {
+        border: 1px solid #ccc;
+        margin-top: 5%;
+    }
+    #tablediv td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 25%;
+        white-space: normal;
+        text-align:left;
+    }
+    #tablediv td:before {
+        position: absolute;
+        top: 6px;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+    #tablediv td:before {
+        content: attr(data-title);
+    }
+    #tablediv table{
+        border-top: none;
+    }
+    #mainImage {
+        align-items: center;
+        vertical-align: middle;
+    }
+    #mainImage .img1{
+        width: 90%;
+    }
+}
+
+
+/*public domain Start*/
+
+#header{
+//background-color: #D9B282;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 0%;
+}
+#homeTitle{
+    font-family: "SBAggroB";
+    font-size: 50px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #222222;
+}
+#nav{
+    text-align: center;
+    margin-bottom: 3%;
+}
+#about, #rooms, #reservation, #community{
+    font-family: "Pretendard-Regular";
+    text-decoration: none;
+    color: #222222;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+/*public domain End*/
+
+
+/*home.html Start*/
+
+#mainImage{
+    display: flex;
+    justify-content: center;
+    opacity: 0%;
+}
+.img1{
+    width: 50%;
+    display: none;
+
+}
+
+/*home.html End*/
+
+
+
+/*index.html Start*/
+
+#input{
+    display: flex;
+    justify-content: right;
+    margin: 6% 13% -2% 0;
+}
+#search{
+    background-color: #444444;
+    color: #F1F1F1;
+    border: none;
+    padding: 0.5% 2% 0.5% 2%;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+#add{
+    background-color: #FFFFFF;
+    color: #444444;
+    border: 2px solid #444444;
+    padding: 0.5% 2% 0.5% 2%;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+#tablediv{
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+    margin-bottom: 1%;
+    margin-top: 3%;
+}
+table {
+    width: 100%;
+    border-top: 1px solid #444444;
+}
+th, td {
+    border-bottom: 1px solid #444444;
+    padding: 1.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+th {font-size: 15px; font-family: "Pretendard-Regular"; color: #666666;}
+td {font-size: 13px; font-family: "Pretendard-Regular"; font-weight: 100;}
+
+/*index.html End*/
+
+
+
+/*add.html Start*/
+
+#space{
+    margin-top: 4%;
+}
+#resTitle{
+    font-family: "Pretendard-Regular";
+    font-size: 30px;
+}
+
+/*add.html End*/
+
+
+/*edit.html Start*/
+.edit {
+    text-decoration: none;
+    color: #444444;
+}
+#update, #delete{
+    background-color: #444444;
+    color: #F1F1F1;
+    border: none;
+    padding: 0.5% 2% 0.5% 2%;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+/*edit.html End*/
