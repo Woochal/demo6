@@ -15,7 +15,7 @@
 
 	int i = hotelDAO.insertHotel(u);
 	String msg = "데이터 추가 성공 !";
-	if(i == 0) msg = "[에러] 데이터 추가 ";
+	if(i == 0) msg = "[에러] 데이터 추가  ";
 %>
 
 <script>
